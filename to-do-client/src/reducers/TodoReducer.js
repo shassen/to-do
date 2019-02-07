@@ -18,7 +18,7 @@ const TodoReducer = (state=INITIAL_DATA, action) => {
         : todo )
     case REMOVE_TODO:
       const numIndex = parseInt(action.id)
-      return state.filter(todo = > todo.id !== numIndex);
+      return state.filter(todo => todo.id !== numIndex);
     default:
       return state
   }
